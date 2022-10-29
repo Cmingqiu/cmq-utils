@@ -5,6 +5,8 @@
     "moduleResolution": "node", //使用node解析路径，可以识别/下面的index文件
     "strict": true,
     "jsx": "preserve",
+    "declaration": true,
+    "declarationDir": "lib/types",
     "sourceMap": true,
     "resolveJsonModule": true, //允许引用json文件
     "esModuleInterop": true, //为导入内容创建命名空间,实现 CommonJS 和 ES 模块之间的互相访问

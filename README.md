@@ -12,6 +12,7 @@
 - 使用 rollup 构建
 - 利用 babel 实现 api 文档自动生成
 - babel 编译 ts，tsc 类型校验
+- 自动生成声明文件
 
 ## 安装
 
