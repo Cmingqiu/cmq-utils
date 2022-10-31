@@ -3,10 +3,10 @@
  * @returns
  */
 
-const typeOf = (obj: unknown): string | undefined =>
-  Object.prototype.toString.call(obj).match(/([^\s.*]+)(?=]$)/g)?.[0];
-
 function deepClone(obj: Record<string, unknown>, hash = new WeakMap()) {
+  const typeOf = (obj: unknown): string | undefined =>
+    Object.prototype.toString.call(obj).match(/([^\s.*]+)(?=]$)/g)?.[0];
+
   // WeakMap是弱引用，不要用Map
   // null 和 undefiend 是不需要拷贝的
   if (obj === null) return obj;

@@ -5,8 +5,7 @@
  * @param {Number} rate 缓动率
  * @param {Function} callback 缓动结束回调函数 两个参数分别是当前位置和是否结束
  */
-
-const easeout = function (
+export default function easeout(
   position: number,
   destination = 0,
   rate = 2,
@@ -29,6 +28,4 @@ const easeout = function (
     requestAnimationFrame(step);
   };
   step();
-};
-
-export default easeout;
+}
