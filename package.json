@@ -1,6 +1,6 @@
 {
   "name": "cmq-utils",
-  "version": "0.0.1",
+  "version": "1.0.6",
   "description": "utils",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
@@ -27,6 +27,10 @@
   "files": [
     "lib"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Cmingqiu/cmq-utils"
+  },
   "author": "chenmq",
   "license": "MIT",
   "devDependencies": {
