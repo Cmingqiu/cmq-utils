@@ -1,6 +1,6 @@
 {
   "name": "cmq-utils",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "utils",
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
