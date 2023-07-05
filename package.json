@@ -16,7 +16,7 @@
     "prebuild": "node scripts/generator.js",
     "dev": "tsc --noEmit && rollup -cw --environment NODE_ENV:development",
     "build": "tsc --noEmit && rollup -c --environment NODE_ENV:production && npm run types",
-    "prepublishOnly": "npm run patch && node scripts/generator.js",
+    "prepublishOnly": "npm run patch",
     "types": "tsc --emitDeclarationOnly",
     "test": "jest"
   },
