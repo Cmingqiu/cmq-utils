@@ -9,18 +9,18 @@ on:
       - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm install --registry=https://registry.npm.taobao.org
-      - run: npm run build
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
+  #     - uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 16
+  #     - run: npm install --registry=https://registry.npm.taobao.org
+  #     - run: npm run build
 
   publish-npm:
-    needs: build
+    # needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -30,6 +30,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: git config --global user.name "chenmq"
       - run: git config --global user.email "1075124372@qq.com"
+      - run: npm install --registry=https://registry.npm.taobao.org
+      - run: npm run build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
