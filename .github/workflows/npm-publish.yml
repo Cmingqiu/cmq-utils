@@ -28,6 +28,9 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+      - run: 
+           git config --global user.name "chenmq",
+           git config --global user.email "1075124372@qq.com"
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
