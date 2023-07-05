@@ -13,6 +13,9 @@
 - 利用 babel 实现 api 文档自动生成
 - babel 编译 ts，tsc 类型校验
 - 自动生成声明文件
+- 支持 ESM，CommonJs，iife
+- 集成github actions自动发布
+- [ ] 集成单元测试
 
 ## 安装
 

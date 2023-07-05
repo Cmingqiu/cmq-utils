@@ -2,7 +2,10 @@
 const babelPluginApiDoc = require('./scripts/babel-plugin-apiDoc');
 
 module.exports = {
-  presets: ['@babel/preset-env', '@babel/preset-typescript'],
+  presets: [
+    ['@babel/preset-env', { targets: { node: 'current' } }],
+    '@babel/preset-typescript'
+  ],
   plugins: [
     [
       '@babel/plugin-transform-runtime',
